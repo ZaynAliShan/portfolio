@@ -1061,7 +1061,7 @@ h3 {
   .scroll-down{
     position: absolute;
     /* bottom: var(--m-2-5); */
-    bottom: 0.1rem;
+    bottom: 0.35rem;
     left: 0;
     width: 100%;
   }
@@ -1071,7 +1071,7 @@ h3 {
   .scroll-down{
     position: absolute;
     /* bottom: var(--m-2-5); */
-    bottom: 0.1rem;
+    bottom: 0.35rem;
     left: 0;
     width: 100%;
   }
