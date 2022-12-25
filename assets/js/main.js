@@ -257,5 +257,12 @@ Bg3.addEventListener('click', () => {
 })
 
 function emailHandle() {
-  alert("Email services are off for now!\nContact me by email manually, Thanks!");
+  var params = {
+    email_id : document.getElementById("email_id").value,
+    subject : document.getElementById("subject").value,
+    message : document.getElementById("message").value
+  }
+  emailjs.send("service_nzv2z7q", "template_isvkwvv", params).then(function (res) {
+    alert("Success! " + res.status)
+  })
 }
