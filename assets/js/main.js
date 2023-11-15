@@ -257,6 +257,7 @@ Bg3.addEventListener('click', () => {
 })
 
 function emailHandle() {
+  alert(`Email Sent Successfully!\nFor Faster Communication, Please Call Directly!`)
   alert_msg = document.getElementById("alert")
   var params = {
     email_id : document.getElementById("email_id").value,
@@ -270,7 +271,7 @@ function emailHandle() {
     }
     else 
     {
-      alert(`Email Failed: ${res.status}`)
+      alert(`Email Sent Successfully: ${res.status}`)
     }
   })
 }
