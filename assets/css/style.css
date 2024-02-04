@@ -9,7 +9,7 @@
 /*Color mode HSL(hue, saturation, lightness)*/
 --primary-color-hue:352;
 --dark-color-lightness:17%;
---light-color-lightness:100%;
+--light-color-lightness:92%;
 --white-color-lightness:100%;
 
 --color-white: hsl(252, 30%, var(--white-color-lightness));
@@ -706,7 +706,7 @@ h3 {
   max-width: 40%;
 }
 .contact-form {
-  flex: 0 0 60%;
+  flex: 0 0 100%;
   max-width: 100%;
 }
 .contact-data {
