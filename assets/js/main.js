@@ -264,14 +264,14 @@ function emailHandle() {
     subject : document.getElementById("subject").value,
     message : document.getElementById("message").value
   }
-  emailjs.send("service_nzv2z7q", "template_isvkwvv", params).then(function (res) {
+  emailjs.send("service_ofhw7ro", "template_ukssygj", params).then(function (res) {
     if (res.status === 200)
     {
       alert(`Email Sent Successfully: ${res.status}`)
     }
     else 
     {
-      alert(`Email Sent Successfully: ${res.status}`)
+      alert(`Email Did not Go Through!`)
     }
   })
 }
