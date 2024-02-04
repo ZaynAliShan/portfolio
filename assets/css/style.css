@@ -697,8 +697,6 @@ h3 {
   border-radius: .5rem;
 }
 
-
-
 /*========== Blog ==========*/
 
 /*========== Contact ==========*/
@@ -709,7 +707,7 @@ h3 {
 }
 .contact-form {
   flex: 0 0 60%;
-  max-width: 60%;
+  max-width: 100%;
 }
 .contact-data {
   display: grid;
