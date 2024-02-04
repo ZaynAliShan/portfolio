@@ -9,7 +9,7 @@
 /*Color mode HSL(hue, saturation, lightness)*/
 --primary-color-hue:352;
 --dark-color-lightness:17%;
---light-color-lightness:92%;
+--light-color-lightness:100%;
 --white-color-lightness:100%;
 
 --color-white: hsl(252, 30%, var(--white-color-lightness));
@@ -697,8 +697,6 @@ h3 {
   border-radius: .5rem;
 }
 
-
-
 /*========== Blog ==========*/
 
 /*========== Contact ==========*/
@@ -709,7 +707,7 @@ h3 {
 }
 .contact-form {
   flex: 0 0 60%;
-  max-width: 60%;
+  max-width: 100%;
 }
 .contact-data {
   display: grid;
