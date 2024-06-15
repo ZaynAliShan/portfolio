@@ -1122,7 +1122,7 @@ h3 {
 
 /* Modal content */
 .modal-content {
-  background-color: #fefefe;
+  background-color: var(--color-light);
   margin: 5% auto;
   padding: 20px;
   border: 1px solid #888;
