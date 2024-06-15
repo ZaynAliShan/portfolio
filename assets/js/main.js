@@ -273,3 +273,67 @@ function emailHandle() {
     }
   })
 }
+
+// Get all modal links
+var modalLinks = document.querySelectorAll('.open-modal');
+
+// Add click event to each link
+modalLinks.forEach(function(link) {
+    link.onclick = function(event) {
+        event.preventDefault();
+        var modalId = this.getAttribute('href').substring(1);
+        var modal = document.getElementById(modalId);
+        modal.style.display = "block";
+        
+        // Lazy load video
+        var video = modal.querySelector('video');
+        var placeholder = modal.querySelector('#video-placeholder');
+        if (video && placeholder) {
+            video.style.display = "block";
+            placeholder.style.display = "none";
+            video.load(); // Ensure video is loaded
+        }
+    }
+});
+
+// Get all close buttons
+var closeButtons = document.querySelectorAll('.close');
+
+// Add click event to each close button
+closeButtons.forEach(function(button) {
+    button.onclick = function() {
+        var modal = this.closest('.modal');
+        modal.style.display = "none";
+        
+        // Pause the video if it exists in the modal
+        var video = modal.querySelector('video');
+        if (video) {
+            video.pause();
+            video.currentTime = 0; // Reset the video to the beginning
+        }
+    }
+});
+
+// Close modal when clicking outside of modal content
+window.onclick = function(event) {
+    var modals = document.querySelectorAll('.modal');
+    modals.forEach(function(modal) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+            
+            // Pause the video if it exists in the modal
+            var video = modal.querySelector('video');
+            if (video) {
+                video.pause();
+                video.currentTime = 0; // Reset the video to the beginning
+            }
+        }
+    });
+}
+
+
+
+
+
+
+
