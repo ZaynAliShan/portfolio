@@ -1297,6 +1297,45 @@ h3 {
   margin-bottom: 15px;
 }
 
+/* Project Links Section */
+.project-links {
+    margin-top: 10px;
+    padding-top: 15px;
+    text-align: center;
+}
 
+.more-info-text {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.link-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.link-icon {
+    color: var(--color-primary);
+    font-size: 24px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-icon:hover {
+    color: var(--color-primary-dark);
+    transform: translateY(-2px);
+}
+
+/* X (Twitter) Icon Styling */
+.x-icon {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
 
 
